@@ -1,0 +1,37 @@
+html>
+<head>
+
+</head>
+<body bgcolor="#f0ffff">
+<center>
+  <div class="row justify-content-center">
+    <div class="col-lg-4 col-md-6 col-sm-8">
+      <div class="card">
+        <div class="card-body">
+          <h3 class="card-title">Log in</h3>
+          <form method="post" novalidate>
+               {% csrf_token %}
+              username:-
+              <input type="text" value="" name="username">
+              <br>
+              password:-
+              <input type="password" value="" name="password">
+              <br>
+
+
+            <button type="submit" class="btn btn-primary btn-block">Log in</button>
+          </form>
+        </div>
+        
+
+      </div>
+      <div class="text-center py-2">
+        <small>
+          <a href="#" class="text-muted">Forgot your password?</a>
+        </small>
+      </div>
+    </div>
+  </div>
+    <center>
+</body>
+</html>
